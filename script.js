@@ -1,7 +1,7 @@
 var map = L.map('map').setView([-34.5361396, -58.7205882], 15); 
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
+    maxZoom: 18,
 }).addTo(map);
 
 // Marcador de Hospital
