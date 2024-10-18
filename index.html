@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Encuesta - Paciente</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
@@ -15,9 +15,8 @@
         </ul>
     </nav>
 
-    <div id="container">
+    <main id="container">
         <div id="map"></div>
-
         <div id="form-container">
             <p>Bienvenido al Sistema de encuestas [Nombre del Paciente].<br>
                 Muchas gracias por darnos su opinión sobre su visita al centro [Nombre del Centro].<br>
@@ -25,7 +24,7 @@
             </p>
             <button id="completar-encuesta">Completar Encuesta</button>
         </div>
-    </div>
+    </main>
 
     <footer>
         <p>2024 Sistema de Encuestas. &copy; </p>
@@ -34,7 +33,7 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
+    <script type="module" src="js/mapa.js"></script>
+    <script src="js/completar_encuesta.js"></script>
 </body>
 </html>
-
