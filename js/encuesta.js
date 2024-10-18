@@ -6,6 +6,9 @@ function initEncuesta() {
     const comentarioField = document.getElementById('comentario');
 
     generarPreguntas(preguntas, preguntasContainer);
+    if (verificarEncuestaCompletada()) {
+        mostrarAlertaEncuestaCompletada();
+    }
     manejarEnvioFormulario(form, comentarioField);
 }
 
@@ -24,28 +27,35 @@ function generarPreguntas(preguntas, container) {
     });
 }
 
-function manejarEnvioFormulario(form, comentarioField) {
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        
-        if (sessionStorage.getItem('encuestaCompletada') === 'true') {
-            mostrarAlertaEncuestaCompletada();
-            return;
-        }
-
-        disableFormInputs(form, comentarioField);
-        sessionStorage.setItem('encuestaCompletada', 'true');
-
-        mostrarAlertaEncuestaCompletadaExito();
-    });
+function verificarEncuestaCompletada() {
+    return sessionStorage.getItem('encuestaCompletada') === 'true';
 }
 
 function mostrarAlertaEncuestaCompletada() {
     Swal.fire({
         icon: 'warning',
         title: 'Encuesta ya completada',
-        text: 'Ya has enviado la encuesta anteriormente. No puedes volver a enviarla.',
-        confirmButtonText: 'Aceptar'
+        text: 'Ya has enviado la encuesta anteriormente. No puedes volver a completarla.',
+        allowOutsideClick: false,
+        confirmButtonText: 'Volver a la página principal',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = "index.html"; 
+        }
+    });
+}
+
+function manejarEnvioFormulario(form, comentarioField) {
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        if (verificarEncuestaCompletada()) {
+            mostrarAlertaEncuestaCompletada();
+        } else {
+            disableFormInputs(form, comentarioField);
+            sessionStorage.setItem('encuestaCompletada', 'true');
+            mostrarAlertaEncuestaCompletadaExito();
+        }
     });
 }
 
