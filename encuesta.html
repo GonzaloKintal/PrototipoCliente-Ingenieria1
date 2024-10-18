@@ -5,189 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuesta de Satisfacción</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="encuesta.js" defer></script>
 </head>
 <body>
 
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="encuesta.html">Encuesta</a></li>
-            <li><a href="#">Contactar</a></li>
         </ul>
     </nav>
 
     <div id="encuesta-container">
         <h1>Encuesta de Satisfacción</h1>
         <form id="encuesta-form">
-            <div>
-                <label>1. ¿Cómo calificaría la atención del personal?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta1" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta1" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta1" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta1" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta1" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta1" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta1" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta1" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta1" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta1" value="10"> 10</label>
-                </div>
-            </div>
 
-            <div>
-                <label>2. ¿Cómo calificaría la limpieza del centro?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta2" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta2" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta2" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta2" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta2" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta2" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta2" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta2" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta2" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta2" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>3. ¿Cómo calificaría el tiempo de espera?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta3" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta3" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta3" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta3" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta3" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta3" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta3" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta3" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta3" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta3" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>4. ¿Cómo calificaría la calidad de la atención médica?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta4" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta4" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta4" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta4" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta4" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta4" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta4" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta4" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta4" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta4" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>5. ¿Cómo calificaría la claridad de las explicaciones dadas?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta5" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta5" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta5" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta5" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta5" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta5" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta5" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta5" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta5" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta5" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>6. ¿Cómo calificaría la puntualidad del personal?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta6" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta6" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta6" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta6" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta6" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta6" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta6" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta6" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta6" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta6" value="10"> 10</label>
-                </div>
-            </div>
-
-            
-            <div>
-                <label>7. ¿Cómo calificaría las instalaciones del centro?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta7" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta7" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta7" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta7" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta7" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta7" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta7" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta7" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta7" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta7" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>8. ¿Cómo calificaría la comodidad de las áreas de espera?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta8" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta8" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta8" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta8" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta8" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta8" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta8" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta8" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta8" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta8" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>9. ¿Cómo calificaría la disponibilidad de turnos?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta9" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta9" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta9" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta9" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta9" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta9" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta9" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta9" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta9" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta9" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>10. ¿Recomendaría este centro a sus conocidos?</label><br>
-                <div class="opciones">
-                    <label><input type="radio" name="pregunta10" value="1" required> 1</label>
-                    <label><input type="radio" name="pregunta10" value="2"> 2</label>
-                    <label><input type="radio" name="pregunta10" value="3"> 3</label>
-                    <label><input type="radio" name="pregunta10" value="4"> 4</label>
-                    <label><input type="radio" name="pregunta10" value="5"> 5</label>
-                    <label><input type="radio" name="pregunta10" value="6"> 6</label>
-                    <label><input type="radio" name="pregunta10" value="7"> 7</label>
-                    <label><input type="radio" name="pregunta10" value="8"> 8</label>
-                    <label><input type="radio" name="pregunta10" value="9"> 9</label>
-                    <label><input type="radio" name="pregunta10" value="10"> 10</label>
-                </div>
-            </div>
-
-            <div>
-                <label>Comentario final (opcional):</label><br>
-                <textarea id="comentario" name="comentario" rows="4" cols="60"></textarea>
-            </div>
-            
-            <div class="button-container">
-                <button type="submit">Enviar Encuesta</button>
-            </div>
+            <textarea id="comentario" rows="4" cols="50" placeholder="Escriba aquí sus comentarios..."></textarea>
+            <button type="submit">Enviar Encuesta</button>
         </form>
     </div>
 
@@ -196,8 +29,6 @@
         <p>Todos los derechos reservados. &reg;</p>
     </footer>
 
-    <script src="encuesta-script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

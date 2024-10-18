@@ -12,6 +12,15 @@ var marker = L.marker([-34.5361396, -58.7205882]).addTo(map)
 
 // Evento al presionar el botón de completar encuesta
 document.getElementById("completar-encuesta").addEventListener("click", function() {
-    window.location.href = "encuesta.html"; 
-});
 
+    if (sessionStorage.getItem('encuestaCompletada') === 'true') {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Encuesta ya completada',
+            text: 'Ya has enviado la encuesta anteriormente. No puedes volver a completarla.',
+            confirmButtonText: 'Aceptar'
+        });
+    } else {
+        window.location.href = "encuesta.html"; 
+    }
+});
