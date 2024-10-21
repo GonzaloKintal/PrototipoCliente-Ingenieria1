@@ -16,7 +16,7 @@ function generarPreguntas(preguntas, container) {
     preguntas.forEach((pregunta, index) => {
         const div = document.createElement("div");
         div.innerHTML = `
-            <label>${pregunta.texto}</label><br>
+            <label><strong>${index + 1}. ${pregunta.texto}</strong></label><br>
             <div class="opciones">
                 ${[...Array(10).keys()].map(i => `
                     <label><input type="radio" name="pregunta${index + 1}" value="${i + 1}" required> ${i + 1}</label>

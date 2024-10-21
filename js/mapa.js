@@ -8,7 +8,7 @@ function initMap() {
     }).addTo(map);
     
     const marker = L.marker([centro.coordenadas.lat, centro.coordenadas.lng]);
-    marker.addTo(map).bindPopup(`${centro.nombre}.<br>Dirección: ${centro.direccion}.`).openPopup();
+    marker.addTo(map).bindPopup(`<strong>${centro.nombre}</strong><br>Dirección: ${centro.direccion}.`).openPopup();    
 }
 
 initMap();
