@@ -1,6 +1,5 @@
-import { preguntas } from './preguntas.js';
-
 function initEncuesta() {
+    const preguntas = window.preguntas; 
     const form = document.getElementById("encuesta-form");
     const preguntasContainer = document.getElementById("preguntas-container");
     const comentarioField = document.getElementById('comentario');

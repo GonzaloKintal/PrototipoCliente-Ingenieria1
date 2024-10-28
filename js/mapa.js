@@ -1,6 +1,5 @@
-import { centro } from './centro.js';
-
 function initMap() {
+    const centro = window.centro; 
     const map = L.map('map').setView([centro.coordenadas.lat, centro.coordenadas.lng], 15);
     
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

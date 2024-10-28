@@ -1,4 +1,4 @@
-export const preguntas = [
+window.preguntas = [
     {
         texto: "¿Cómo calificaría la atención del personal?",
     },
